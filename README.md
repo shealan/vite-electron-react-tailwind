@@ -1,6 +1,6 @@
 # Vite + Electron + React + Tailwind
 
-This is my modern Electron desktop application boilerplate built with React, TypeScript, and Tailwind CSS. This project is powered by [electron-vite](https://electron-vite.org/), providing fast development and optimized builds.
+This is my modern Electron desktop application boilerplate built with Vite, React, TypeScript and Tailwind CSS. This project is powered by [electron-vite](https://electron-vite.org/), providing fast development and optimized builds. This boilerplate is a starting point for my Electron applications. Hopefully it's useful for you too!
 
 ## 🚀 Features
 
@@ -10,6 +10,14 @@ This is my modern Electron desktop application boilerplate built with React, Typ
 - ⚛️ **React 19**: Latest React with modern patterns and performance optimizations
 - 🛠️ **Pre-configured**: Ready-to-use setup with sensible defaults
 - 📦 **Cross-platform**: Build for Windows, macOS, and Linux
+
+## 🔮 Coming Soon
+
+I will likely add the following features in the future as I increasingly find myself using these tools in every project.
+
+- [ ] Shadcn UI
+- [ ] Zustand Store
+- [ ] SQLite Database
 
 ## 🛠️ Tech Stack
 
@@ -73,6 +81,9 @@ bun run build:linux   # Linux
 # Build without packaging (for testing)
 bun run build:unpack
 ```
+
+> [!IMPORTANT]
+> When creating Windows executables using an Apple Silicon Mac, builds default to the `arm64` architecture. These will not run on the majority of Windows machines. For this reason the `--x64` flag is added to the `build:win` build command. You can remove this flag if you are building on an Intel Mac, or specifically want to build for the `arm64` architecture.
 
 ## 🏗️ Project Structure
 
